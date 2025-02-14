@@ -1,0 +1,13 @@
+vim.opt.number = true -- 显示行号
+vim.opt.relativenumber = true -- 显示相对行号
+vim.opt.tabstop = 4 -- Tab 宽度为 4
+vim.opt.shiftwidth = 4 -- 自动缩进宽度为 4
+vim.opt.expandtab = true -- 将 Tab 转换为空格
+vim.opt.ignorecase = true -- 搜索时忽略大小写
+vim.opt.smartcase = true -- 搜索时智能大小写
+vim.opt.mouse = "a" -- 启用鼠标支持
+vim.opt.cursorline = true -- 高亮当前行
+vim.opt.termguicolors = true -- 显示真颜色
+vim.opt.ignorecase = true -- 忽略大小写
+vim.opt.undofile = true
+vim.opt.wrap = false

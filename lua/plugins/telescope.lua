@@ -1,6 +1,5 @@
 return{
     -- 高级搜索
-    -- change some telescope options and a keymap to browse plugin files
     {
       "nvim-telescope/telescope.nvim",
       dependencies = {

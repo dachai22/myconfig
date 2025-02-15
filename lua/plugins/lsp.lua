@@ -47,10 +47,10 @@ return{
             { name = "path" }, -- 文件路径
           }),
         })
-            -- Set up lspconfig.
+        -- Set up lspconfig.
         local nvim_lsp = require("lspconfig")
     	local capabilities = require('cmp_nvim_lsp').default_capabilities()
-            -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+        -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
     	nvim_lsp["pyright"].setup {
         	capabilities = capabilities
     	}

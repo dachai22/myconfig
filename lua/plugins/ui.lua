@@ -1,4 +1,5 @@
-return{    -- 状态栏
+return{
+    -- 状态栏
     {
       "nvim-lualine/lualine.nvim",
       dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -60,7 +61,6 @@ return{    -- 状态栏
         },
       },
     },
-    -- lazy.nvim
     -- 命令显示框
     {
       "folke/noice.nvim",

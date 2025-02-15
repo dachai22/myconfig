@@ -1,8 +1,9 @@
-local keymap = vim.keymap
 
+local vim = vim
+local keymap = vim.keymap
 -- 设置 leader 键为空格
-vim.g.mapleader = " "
-vim.g.maplpcalleader = " "
+-- vim.g.mapleader = " "
+-- vim.g.maplocalleader = " "
 
 keymap.set("n", "<leader>w", ":w<CR>", { silent = true })
 keymap.set("n", "<leader>q", ":q<CR>", { silent = true })

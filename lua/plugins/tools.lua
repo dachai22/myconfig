@@ -21,13 +21,17 @@ return {
     },
   },
   {
-    "ellisonleao/glow.nvim",
-    cmd = "Glow",
-    config = function()
-      require("glow").setup({
-        style = "dark",
-        width = 120,
-      })
+    "iamcco/markdown-preview.nvim",
+    event = "VeryLazy",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
     end,
+    ft = { "markdown" },
+  },
+  {
+    "mg979/vim-visual-multi",
+    event = "VeryLazy",
   },
 }

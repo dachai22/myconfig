@@ -1,4 +1,3 @@
-
 local vim = vim
 local keymap = vim.keymap
 
@@ -23,3 +22,6 @@ keymap.set({ "n", "v" }, "<leader>fm", function()
     timeout_ms = 1000,
   })
 end, { desc = "Format File" })
+
+keymap.set("v", "<leader>tp", 'y<cmd>Pantran<cr>p')
+keymap.set("v", "<leader>tr", '<cmd>Translate zh<cr>')

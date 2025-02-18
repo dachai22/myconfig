@@ -1,4 +1,3 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("config.keymaps")
 require("config.options")
@@ -8,3 +7,5 @@ require("plugins.telescope")
 require("plugins.treescitter")
 require("plugins.ui")
 require("plugins.tools")
+require("plugins.translate")
+require("plugins.snippets")

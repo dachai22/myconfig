@@ -15,7 +15,7 @@ return {
       -- 自动安装 LSP 服务器
       mason.setup()
       mason_lspconfig.setup({
-        ensure_installed = { "lua_ls", "pyright", "eslint", "html", "cssls" }, -- 确保安装 Lua 和 Python 的 LSP
+        ensure_installed = { "lua_ls", "pyright", "html", "cssls","ts_ls"}, -- 确保安装 Lua 和 Python 的 LSP
       })
     end,
   },
@@ -68,10 +68,10 @@ return {
       nvim_lsp.html.setup({
         capabilities = capabilities,
       })
-      nvim_lsp.eslint.setup({
+      nvim_lsp.cssls.setup({
         capabilities = capabilities,
       })
-      nvim_lsp.cssls.setup({
+      nvim_lsp.ts_ls.setup({
         capabilities = capabilities,
       })
     end,

@@ -21,14 +21,11 @@ return {
     },
   },
   {
-    "iamcco/markdown-preview.nvim",
+    "brianhuster/live-preview.nvim",
     event = "VeryLazy",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    build = "cd app && yarn install",
-    init = function()
-      vim.g.mkdp_filetypes = { "markdown" }
+    config = function()
+      require("livepreview.config").set()
     end,
-    ft = { "markdown" },
   },
   {
     "mg979/vim-visual-multi",

@@ -6,9 +6,9 @@ return {
     event = "VeryLazy",
     config = function()
       require("pantran").setup({
-        default_engine = "google", -- 默认翻译引擎
+        default_engine = "yandex", -- 默认翻译引擎
         engines = {
-          google = {
+          yandex = {
             fallback = {
               default_source = "en", -- 自动检测源语言
               default_target = "zh", -- 目标语言为中文

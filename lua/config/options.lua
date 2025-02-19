@@ -1,3 +1,4 @@
+local vim = vim
 vim.opt.number = true -- 显示行号
 vim.opt.relativenumber = true -- 显示相对行号
 vim.opt.tabstop = 4 -- Tab 宽度为 4
@@ -11,3 +12,4 @@ vim.opt.termguicolors = true -- 显示真颜色
 vim.opt.ignorecase = true -- 忽略大小写
 vim.opt.undofile = true
 vim.opt.wrap = false
+vim.opt.splitbelow = true

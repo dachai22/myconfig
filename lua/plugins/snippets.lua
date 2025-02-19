@@ -6,7 +6,7 @@ return {
   },
   coifig = function()
     require("luasnip.loaders.from_vscode").load({
-      exclude = { "javascript", "html" },
+      exclude = { "javascript", "html","typescript" },
     })
   end,
 }

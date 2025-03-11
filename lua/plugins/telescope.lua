@@ -6,6 +6,7 @@ return {
 			"nvim-lua/plenary.nvim",
 			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		},
+        event = "VeryLazy",
 		config = function()
 			require("telescope").setup({
 				extensions = {
@@ -43,6 +44,7 @@ return {
 				pickers = {
 					find_files = {
 						hidden = true,
+                        cwd = "/home",
 						find_command = {
 							"fd",
 							"--type",
@@ -51,6 +53,7 @@ return {
 						},
 					},
 					live_grep = {
+                        cwd = "/home",
 						additional_args = function(opts)
 							return { "--hidden" }
 						end,

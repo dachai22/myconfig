@@ -3,7 +3,7 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
-			ensure_installed = { "all" },
+			ensure_installed = {"lua","rust","html","css","javascript","json","bash"},
 			highlight = { enable = true },
 			indent = { enable = true },
 		},

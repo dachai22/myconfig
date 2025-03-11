@@ -43,12 +43,17 @@ return {
 				chunk = {
 					enable = true,
 					use_treesitter = true,
+					supported_filetypes = {
+						lua = true,
+						html = true,
+						rust = true,
+					},
 					style = {
 						{ fg = "#806d9c" },
 					},
 				},
 				indent = {
-                    enable = true,
+					enable = true,
 					chars = { "│", "¦", "┆", "┊" },
 					use_treesitter = true,
 				},
@@ -56,7 +61,7 @@ return {
 					enable = false,
 				},
 				line_num = {
-                    enable = true,
+					enable = true,
 					use_treesitter = true,
 				},
 			})
